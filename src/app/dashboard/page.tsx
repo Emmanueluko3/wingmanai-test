@@ -5,25 +5,19 @@ import { useRouter } from "next/navigation";
 import { CgSpinner } from "react-icons/cg";
 
 export default function Dashboard() {
-  const [loading, setLoading] = useState(true);
   const router = useRouter();
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading(false);
       router.push("/dashboard/summary");
-    }, 1000);
+    }, 200);
 
     return () => clearTimeout(timer);
   }, [router]);
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-white text-primaryDark">
-      {loading ? (
-        <CgSpinner className="w-28 h-28 text-primary animate-spin" />
-      ) : (
-        <p>Loading completed...</p>
-      )}
+      <p className="text-primaryDark">Loading...</p>
     </div>
   );
 }
