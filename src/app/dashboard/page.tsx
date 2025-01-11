@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { CgSpinner } from "react-icons/cg";
 
 export default function Dashboard() {
   const router = useRouter();
