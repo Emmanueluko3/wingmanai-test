@@ -11,6 +11,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        primaryLight: "#667085",
+        primaryDark: "#134E48",
+        primarySolid: "#212636",
+        lightColor: "#CCFBEF",
+        chartYellow: "#FFF3C6",
       },
     },
   },
